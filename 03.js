@@ -14,9 +14,16 @@ function buscarAmigo(amigos, nombre) {
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
 
   // Tu código aca:
-  
+  let amigo;
+
+  for (persona of amigos) {
+    if (persona.nombre == nombre) {
+      amigo = persona;
+    }
+  }
+  return amigo;
 }
 
 // No modifiques nada debajo de esta linea //
 
-module.exports = buscarAmigo
+module.exports = buscarAmigo;
